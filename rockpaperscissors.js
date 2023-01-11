@@ -2,6 +2,10 @@
     de forma aleatoria */
 var computerOptions = ["rock", "paper", "scissors"];
 
+function getComputerChoice(){
+    return computerOptions[Math.floor(Math.random()*computerOptions.length)]
+}
+
 
 
 
