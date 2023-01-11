@@ -1,2 +1,8 @@
-console.log("Hello World");
-console.log("Hello Pao");
+/* 1. Declramos array sobre la que nuestra funcion getComputerChoice tomara una opcion
+    de forma aleatoria */
+var computerOptions = ["rock", "paper", "scissors"];
+
+
+
+
+
