@@ -55,6 +55,9 @@ let showMessage = "The winner is the ";
              
  }
 
+     /* Llamada de prueba a la funcion singleRound */
+     singleRound(getUserChoice(),getComputerChoice());
+
 
 
 
