@@ -21,7 +21,39 @@ function getUserChoice(){
     return prompt("What is you choice??: ");
 }
 
+/* 4. Declaramos variables para la funcion singleRound() las declarams fuera, global
+   scope, de la funcion para poder ejecutarlas luego en otras funciones o en otra parte
+   del script, si las declarsemos dentro solo de podrian ejecutar dentro de la
+   misma funcion donde se declararon es decir en el local scope */
 
+/* variables */
+   
+let roundWinner;
+let showMessage = "The winner is the ";
+
+/* Funcion */
+ function singleRound(userSelection,computerSelection){
+     userSelection = userSelection.toLowerCase();    /*Convertimos las strings qeu entran a minusculas para compararlas */
+     computerSelection = computerSelection.toLowerCase();
+     if (userSelection === computerSelection){
+
+         roundWinner = "Tie"
+         console.log(roundWinner);
+
+     }else if ((userSelection==="rock" && computerSelection==="scissors")||
+         (userSelection==="paper" && computerSelection==="rock")||
+         (userSelection==="scissors" && computerSelection==="paper")){
+
+         roundWinner = "Player";
+         console.log(showMessage + roundWinner);
+
+     }else{
+
+         roundWinner = "Computer"
+         console.log(showMessage + roundWinner);
+     }
+             
+ }
 
 
 
