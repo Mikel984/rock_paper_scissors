@@ -32,6 +32,11 @@ let roundWinner;
 let showMessage = "The winner is the ";
 
 /* Funcion */
+let userSelection = getUserChoice();
+let computerSelection = getComputerChoice();
+/* Declaro primero las variables que seran los parametros de la funcion ya que
+   estas deben tener el valor de las funciones getUserChoice Y getCompuerChoice */ 
+
  function singleRound(userSelection,computerSelection){
      userSelection = userSelection.toLowerCase();    /*Convertimos las strings qeu entran a minusculas para compararlas */
      computerSelection = computerSelection.toLowerCase();
@@ -56,7 +61,8 @@ let showMessage = "The winner is the ";
  }
 
      /* Llamada de prueba a la funcion singleRound */
-     singleRound(getUserChoice(),getComputerChoice());
+
+     singleRound(userSelection,computerSelection);
 
 
 
